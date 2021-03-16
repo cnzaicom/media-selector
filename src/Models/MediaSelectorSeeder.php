@@ -46,7 +46,7 @@ class MediaSelectorSeeder extends Seeder
 
         foreach ($allFiles as $key => $v) {
 
-            if (Media::query()->where('path', $v)->count() > 0)
+            if (Media::query()->where('md5', md5_file($file))->count() > 0)
                 continue;
 
             $file = $this->storage->getDriver()->getAdapter()->applyPathPrefix($v);
