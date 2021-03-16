@@ -46,10 +46,10 @@ class MediaSelectorSeeder extends Seeder
 
         foreach ($allFiles as $key => $v) {
 
+            $file = $this->storage->getDriver()->getAdapter()->applyPathPrefix($v);
+
             if (Media::query()->where('md5', md5_file($file))->count() > 0)
                 continue;
-
-            $file = $this->storage->getDriver()->getAdapter()->applyPathPrefix($v);
 
             $bucket = $disk == 'qiniu' ? config('filesystems.disks.qiniu.bucket') : null;
 
