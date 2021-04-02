@@ -2,6 +2,8 @@
 
 ![图片名称](https://laravel-admin.org/storage/2020/09/25/C8WZmrKi6Ocl7zYRxiaLgbMrFHfWmjUm0Ct77U73.png)
 
+#基于de-memory/media-selector修改。
+
 ## 依赖
  
 - php  | >=7.0.0
