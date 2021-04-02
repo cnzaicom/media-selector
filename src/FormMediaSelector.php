@@ -10,15 +10,15 @@ class FormMediaSelector extends Field
     protected $view = 'media-selector::index';
 
     protected static $css = [
-        'vendor/de-memory/media-selector/app.css',
-        'vendor/de-memory/media-selector/bootstrap-table/dist/bootstrap-table.min.css'
+        'vendor/cnzaicom/media-selector/app.css',
+        'vendor/cnzaicom/media-selector/bootstrap-table/dist/bootstrap-table.min.css'
     ];
 
     protected static $js = [
-        'vendor/de-memory/media-selector/bootstrap-table/dist/bootstrap-table.min.js',
-        'vendor/de-memory/media-selector/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js',
-        'vendor/de-memory/media-selector/sortablejs/Sortable.js',
-        'vendor/de-memory/media-selector/app.js',
+        'vendor/cnzaicom/media-selector/bootstrap-table/dist/bootstrap-table.min.js',
+        'vendor/cnzaicom/media-selector/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js',
+        'vendor/cnzaicom/media-selector/sortablejs/Sortable.js',
+        'vendor/cnzaicom/media-selector/app.js',
     ];
 
     /**

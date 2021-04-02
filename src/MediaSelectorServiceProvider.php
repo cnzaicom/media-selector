@@ -30,7 +30,7 @@ class MediaSelectorServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole() && $assets = $extension->assets()) {
             $this->publishes(
-                [$assets => public_path('vendor/de-memory/media-selector')],
+                [$assets => public_path('vendor/cnzaicom/media-selector')],
                 'media-selector'
             );
         }
@@ -54,7 +54,7 @@ class MediaSelectorServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([__DIR__.'/../database/migrations' => database_path('migrations')], 'media-selector-migrations');
-            $this->publishes([__DIR__.'/../resources/assets' => public_path('vendor/de-memory/media-selector')], 'media-selector-assets');
+            $this->publishes([__DIR__.'/../resources/assets' => public_path('vendor/cnzaicom/media-selector')], 'media-selector-assets');
         }
     }
 
